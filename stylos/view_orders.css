@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #ff8c00;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff8c00;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ffe0b2;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+td a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+td a:hover {
+    background-color: darkorange;
+}
+
+/* Media query para móviles */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px; /* Ajusta el tamaño del encabezado */
+    }
+
+    table {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        display: block; /* Hacer que la tabla sea desplazable */
+        overflow-x: auto; /* Permitir desplazamiento horizontal */
+        white-space: nowrap; /* Evitar que el texto se rompa */
+    }
+
+    th, td {
+        padding: 8px; /* Menor padding en celdas */
+    }
+
+    td a {
+        padding: 8px 15px; /* Ajusta el padding de los enlaces */
+        font-size: 12px; /* Ajusta el tamaño de la fuente de los enlaces */
+    }
+
+    .actions {
+        flex-direction: column; /* Cambia a columna para acciones */
+        margin-top: 15px; /* Menor margen superior */
+    }
+}
+

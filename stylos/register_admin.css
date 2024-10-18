@@ -1,0 +1,102 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5e6; /* Fondo suave en tono naranja claro */
+    color: #333;
+    
+}
+
+.container-form {
+    width: 400px; /* Tamaño más pequeño */
+    margin: 30px auto; /* Reducir margen superior */
+    padding: 15px; /* Menos padding */
+    background-color: #fff;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px; /* Menos margen en el encabezado */
+    color: #ff8c00; /* Tono naranja para el encabezado */
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 5px 0 3px; /* Ajuste del margen */
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 8px; /* Menos padding */
+    margin-bottom: 10px; /* Menos margen entre inputs */
+    border: 1px solid #ff8c00; /* Borde naranja */
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: darkorange; /* Color de borde al enfocarse */
+    outline: none;
+}
+
+button {
+    padding: 8px; /* Menos padding */
+    margin-top: 5px; /* Menos margen superior */
+    background-color: #ff8c00; /* Tono naranja */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkorange; /* Color más oscuro al pasar el mouse */
+}
+
+.message {
+    margin-top: 15px; /* Ajuste del margen superior */
+    padding: 8px; /* Menos padding */
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+
+.message.error {
+    color: red;
+    background-color: #ffe6e6;
+}
+
+.message:not(.error) {
+    color: green;
+    background-color: #e6ffe6;
+}
+
+/* Media query para móviles */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Ajustar el ancho del contenedor en móviles */
+        margin: 20px auto; /* Ajustar margen en móvil */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar tamaño de fuente del encabezado */
+    }
+
+    input, button {
+        font-size: 14px; /* Ajustar tamaño de fuente de inputs y botón */
+    }
+}

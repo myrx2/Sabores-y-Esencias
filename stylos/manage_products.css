@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff6f00;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.02);
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.edit-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff6f00;
+}
+
+.delete-button {
+    background-color: #ff4d00;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+form {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Media query para móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Ajustar tamaño de encabezado */
+    }
+
+    .menu a {
+        font-size: 14px; /* Ajustar tamaño de fuente en el menú */
+        padding: 8px 16px; /* Reducir el padding del botón */
+    }
+
+    .products-container {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .product {
+        width: 90%; /* Cambiar ancho de los productos */
+        margin: 10px 0; /* Ajustar márgenes para móviles */
+    }
+
+    input {
+        font-size: 16px; /* Ajustar tamaño de fuente de los inputs */
+    }
+
+    button, .delete-button {
+        font-size: 16px; /* Ajustar tamaño de fuente de los botones */
+    }
+
+    form {
+        padding: 10px; /* Ajustar el padding del formulario */
+    }
+}
+
